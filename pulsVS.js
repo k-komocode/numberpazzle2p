@@ -13,7 +13,9 @@ var flg4 = 0
     document.getElementById(panel[i]).innerHTML=1;
 }*/
 document.getElementById("stop").style.visibility = "hidden"
-document.getElementById("firldid").style.visibility = "hidden"
+
+document.getElementById("firldid").style.display="none"
+document.getElementById("think").style.visibility = "hidden"
 
 //下は初期値
 document.getElementById(panel1[0]).innerHTML=1
@@ -67,7 +69,8 @@ function reset(){
 
   function move(){
     count = Number(document.getElementById("movecount").value)
-    document.getElementById("firldid").style.visibility = "visible"
+    document.getElementById("rule").style.display="none"
+    document.getElementById("firldid").style.display="block"
     reset()
   }
 

@@ -55,36 +55,50 @@
             </p>
         </form>
         <div class ='firld' id = 'firldid'>
-            <div id="bodydiv" class='panelbody1'>
 
+            <p>
+            <div id="bodydiv" class='panel body'>
+                    <div>あなた</div><br>
                 <button id="panel0" class="btn btn-secondary tile" onclick="pushed(this.id)" > </button> <button id="panel1" class="btn btn-secondary tile" onclick="pushed(this.id)" ></button> <button id="panel2" class="btn btn-secondary tile" onclick="pushed(this.id)" ></button><br />
 
                 <button id="panel3" class="btn btn-secondary tile" onclick="pushed(this.id)" ></button> <button id="panel4" class="btn btn-secondary tile" onclick="pushed(this.id)" ></button> <button id="panel5" class="btn btn-secondary tile" onclick="pushed(this.id)" ></button><br />
 
                 <button id="panel6" class="btn btn-secondary tile" onclick="pushed(this.id)" ></button> <button id="panel7"  class="btn btn-secondary tile" onclick="pushed(this.id)" ></button> <button id="panel8" class="btn btn-secondary tile" onclick="pushed(this.id)" ></button><br />
                     <!-- btn btn-secondary tileは、bootstrapから引っ張ってきた要素。onclickはクリックに大してこう反応せよというコマンド　-->
-                <div id = 'sum1'></div>
-            </div>
-            <div id="bodydiv2" class='panelbody2'>
 
+                <div id = 'sum1' class = 'sumclass'></div><br />
+
+
+            </div>
+            </p>
+
+            <p>
+            <div id="bodydiv2" class='panel body'>
+                <div>相手</div><br>
                 <button id="panela0" class="btn btn-secondary tile" onclick="pushed(this.id)" > </button> <button id="panela1" class="btn btn-secondary tile" onclick="pushed(this.id)" ></button> <button id="panela2" class="btn btn-secondary tile" onclick="pushed(this.id)" ></button><br />
 
                 <button id="panela3" class="btn btn-secondary tile" onclick="pushed(this.id)" ></button> <button id="panela4" class="btn btn-secondary tile" onclick="pushed(this.id)" ></button> <button id="panela5" class="btn btn-secondary tile" onclick="pushed(this.id)" ></button><br />
 
                 <button id="panela6" class="btn btn-secondary tile" onclick="pushed(this.id)" ></button> <button id="panela7"  class="btn btn-secondary tile" onclick="pushed(this.id)" ></button> <button id="panela8" class="btn btn-secondary tile" onclick="pushed(this.id)" ></button><br />
                     <!-- btn btn-secondary tileは、bootstrapから引っ張ってきた要素。onclickはクリックに大してこう反応せよというコマンド　-->
-                <div id = 'sum2'></div>    
+
+                <div id = 'sum2' class = 'sumclass'></div><br />
+  
             </div>
-        </div>
-        <br>
+        </p>
+    </div>
+    <br>
 
         <button class="btn btn-light" onclick="reset()">リセット</button>
         <br>
         <div id = "nextid" class = 'nextclass'>
-            <button id="nextpanel" class="btn btn-secondary tile" ></button>
+
+            <p>ネクストパネル：次、クリックしたパネルに入力される数字<br /></p>
+            <button id="nextpanel" class="btn btn-secondary tile next" ></button>
+
         </div>
         <div id = "stop">手番が飛んでます。</div>
-        <div id = "winner"></div>
+        <div id = "winner" class = "winnerclass"></div> <div id = "turn">ターン目</div>   
         <div id = "kakunin"></div>
                 
             

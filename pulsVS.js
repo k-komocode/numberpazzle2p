@@ -13,6 +13,7 @@ var flg4 = 0
     document.getElementById(panel[i]).innerHTML=1;
 }*/
 document.getElementById("stop").style.visibility = "hidden"
+document.getElementById("nextid").style.visibility = "hidden"
 
 document.getElementById("firldid").style.display="none"
 document.getElementById("think").style.visibility = "hidden"
@@ -68,10 +69,15 @@ function reset(){
 }
 
   function move(){
+    if(document.getElementById("movecount").value == false){
+      alert('合計手数を指定してください')
+    }else{
     count = Number(document.getElementById("movecount").value)
     document.getElementById("rule").style.display="none"
     document.getElementById("firldid").style.display="block"
+    document.getElementById("nextid").style.visibility = "visible"
     reset()
+    }
   }
 
   function pushed(id){
